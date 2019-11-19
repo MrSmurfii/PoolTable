@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using TMPro;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.SceneManagement;
 
 public class BilliardsManager : MonoBehaviour {
@@ -17,7 +13,8 @@ public class BilliardsManager : MonoBehaviour {
 	private float maxPower = 40f;
 	private float forcePower;
 	private Camera camera;
-	Vector3 clickStart = Vector3.zero;
+	private Vector3 clickStart = Vector3.zero;
+	private float gravity = 9f;
 	
 	private void Start() {
 		radius = balls[0].transform.localScale.x * 0.5f;
@@ -35,7 +32,7 @@ public class BilliardsManager : MonoBehaviour {
 		foreach (Ball ball in balls) {
 			if (!ball.gameObject.activeSelf) continue;
 			HandleCollision(ball);
-			
+			HandleGravity(ball);
 			ball.Position += ball.velocity * Time.deltaTime;
 			ball.velocity *= 0.98f;
 			if (ball.velocity.magnitude < 0.1f)
@@ -56,28 +53,27 @@ public class BilliardsManager : MonoBehaviour {
 	void SpawnCueAndShoot() {
 		cueFocus.transform.position = cueBall.Position;
 		cue.SetActive(true);
-		Vector3 cueStartPos = cue.transform.localPosition;
 			
 		Plane plane = new Plane(Vector3.up, cueBall.Position);
 		Ray ray = camera.ScreenPointToRay(Input.mousePosition);
-		if (plane.Raycast(ray, out float enter))
-		{
-			Vector3 mouseWorld = ray.origin + ray.direction * enter;
-			Vector3 delta = mouseWorld - cueBall.Position;
-			cueFocus.transform.forward = -delta.normalized;
-			if (Input.GetMouseButtonDown(0)) {
-				clickStart = delta;
-			}
-
-			if (Input.GetMouseButtonUp(0)) {
-				Vector3 clickEnd = delta;
-				float power = (clickEnd - clickStart).magnitude;
-				power *= powerMultiplier;
-				if (power >= maxPower)
-					power = maxPower;
-				cueBall.velocity = -delta.normalized * power;
-			}
+		if (!plane.Raycast(ray, out float enter)) return;
+		Vector3 mouseWorld = ray.origin + ray.direction * enter;
+		Vector3 delta = mouseWorld - cueBall.Position;
+		cueFocus.transform.forward = -delta.normalized;
+		if (Input.GetMouseButtonDown(0)) {
+			clickStart = delta;
 		}
+
+	
+		
+		if (!Input.GetMouseButtonUp(0)) return;
+		Vector3 clickEnd = delta;
+		float power = (clickEnd - clickStart).magnitude;
+		power *= powerMultiplier;
+		if (power >= maxPower)
+			power = maxPower;
+		
+		cueBall.velocity = -delta.normalized * power;
 	}
 
 	void HandleCollision(Ball ball) {
@@ -128,6 +124,17 @@ public class BilliardsManager : MonoBehaviour {
 	private void Reset() {
 		SceneManager.LoadScene("SampleScene");
 	}
+
+	void HandleGravity(Ball ball) {
+		if (!Physics.SphereCast(ball.Position, radius, Vector3.down, out RaycastHit hit,
+			 Time.deltaTime + SkinWidth)) {
+			ball.velocity += Time.deltaTime * gravity * Vector3.down;
+		}
+		else {
+			ball.velocity.y = 0f;	
+		}
+	}
+	
 }
 
 	

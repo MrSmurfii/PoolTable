@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 147886647}
   - component: {fileID: 147886646}
   - component: {fileID: 147886644}
-  - component: {fileID: 147886645}
   m_Layer: 0
   m_Name: Ball (8)
   m_TagString: Ball
@@ -156,21 +155,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &147886645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 147886643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &147886646
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1053,7 +1037,6 @@ GameObject:
   - component: {fileID: 626917454}
   - component: {fileID: 626917453}
   - component: {fileID: 626917451}
-  - component: {fileID: 626917452}
   m_Layer: 0
   m_Name: Ball (10)
   m_TagString: Ball
@@ -1076,21 +1059,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &626917452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626917450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &626917453
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1269,7 +1237,6 @@ GameObject:
   - component: {fileID: 665488124}
   - component: {fileID: 665488123}
   - component: {fileID: 665488121}
-  - component: {fileID: 665488122}
   m_Layer: 0
   m_Name: Ball (9)
   m_TagString: Ball
@@ -1292,21 +1259,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &665488122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665488120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &665488123
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1393,7 +1345,6 @@ GameObject:
   - component: {fileID: 684626727}
   - component: {fileID: 684626726}
   - component: {fileID: 684626724}
-  - component: {fileID: 684626725}
   m_Layer: 0
   m_Name: Ball (13)
   m_TagString: Ball
@@ -1416,21 +1367,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &684626725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 684626723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &684626726
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1517,7 +1453,6 @@ GameObject:
   - component: {fileID: 701044735}
   - component: {fileID: 701044734}
   - component: {fileID: 701044732}
-  - component: {fileID: 701044733}
   m_Layer: 0
   m_Name: Ball (1)
   m_TagString: Ball
@@ -1540,21 +1475,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &701044733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 701044731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &701044734
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1641,7 +1561,6 @@ GameObject:
   - component: {fileID: 831118609}
   - component: {fileID: 831118608}
   - component: {fileID: 831118611}
-  - component: {fileID: 831118607}
   m_Layer: 0
   m_Name: CueBall
   m_TagString: Ball
@@ -1657,27 +1576,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 831118605}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.554, y: 1.4977927, z: 1.924}
+  m_LocalPosition: {x: 0.554, y: 2.585, z: 1.924}
   m_LocalScale: {x: 0.195516, y: 0.195516, z: 0.195516}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &831118607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 831118605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &831118608
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1765,7 +1669,6 @@ GameObject:
   - component: {fileID: 844673391}
   - component: {fileID: 844673390}
   - component: {fileID: 844673388}
-  - component: {fileID: 844673389}
   m_Layer: 0
   m_Name: Ball (4)
   m_TagString: Ball
@@ -1788,21 +1691,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &844673389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844673387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &844673390
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1889,7 +1777,6 @@ GameObject:
   - component: {fileID: 1116653351}
   - component: {fileID: 1116653350}
   - component: {fileID: 1116653348}
-  - component: {fileID: 1116653349}
   m_Layer: 0
   m_Name: Ball (12)
   m_TagString: Ball
@@ -1912,21 +1799,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &1116653349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116653347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &1116653350
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2013,7 +1885,6 @@ GameObject:
   - component: {fileID: 1156823343}
   - component: {fileID: 1156823342}
   - component: {fileID: 1156823340}
-  - component: {fileID: 1156823341}
   m_Layer: 0
   m_Name: Ball (11)
   m_TagString: Ball
@@ -2036,21 +1907,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &1156823341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156823339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &1156823342
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2137,7 +1993,6 @@ GameObject:
   - component: {fileID: 1220597354}
   - component: {fileID: 1220597353}
   - component: {fileID: 1220597351}
-  - component: {fileID: 1220597352}
   m_Layer: 0
   m_Name: Ball (2)
   m_TagString: Ball
@@ -2160,21 +2015,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &1220597352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1220597350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &1220597353
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2296,7 +2136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1257135996
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2462,7 +2302,6 @@ GameObject:
   - component: {fileID: 1330912113}
   - component: {fileID: 1330912112}
   - component: {fileID: 1330912110}
-  - component: {fileID: 1330912111}
   m_Layer: 0
   m_Name: Ball (7)
   m_TagString: Ball
@@ -2485,21 +2324,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &1330912111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330912109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &1330912112
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2771,7 +2595,6 @@ GameObject:
   - component: {fileID: 1392358131}
   - component: {fileID: 1392358130}
   - component: {fileID: 1392358128}
-  - component: {fileID: 1392358129}
   m_Layer: 0
   m_Name: Ball (6)
   m_TagString: Ball
@@ -2794,21 +2617,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &1392358129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392358127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &1392358130
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2895,7 +2703,6 @@ GameObject:
   - component: {fileID: 1416943751}
   - component: {fileID: 1416943750}
   - component: {fileID: 1416943748}
-  - component: {fileID: 1416943749}
   m_Layer: 0
   m_Name: Ball (5)
   m_TagString: Ball
@@ -2918,21 +2725,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &1416943749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1416943747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &1416943750
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3111,7 +2903,6 @@ GameObject:
   - component: {fileID: 1510670946}
   - component: {fileID: 1510670945}
   - component: {fileID: 1510670943}
-  - component: {fileID: 1510670944}
   m_Layer: 0
   m_Name: Ball (3)
   m_TagString: Ball
@@ -3134,21 +2925,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &1510670944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510670942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &1510670945
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3356,7 +3132,7 @@ BoxCollider:
   m_GameObject: {fileID: 1668671449}
   m_Material: {fileID: 13400000, guid: 05200276f758b6347a2c8926ed1e8231, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3454,7 +3230,7 @@ MonoBehaviour:
   - {fileID: 2114344940}
   cue: {fileID: 1257135995}
   cueFocus: {fileID: 1235746388}
-  powerMultiplier: 10
+  powerMultiplier: 5
 --- !u!4 &1828288064
 Transform:
   m_ObjectHideFlags: 0
@@ -3574,7 +3350,6 @@ GameObject:
   - component: {fileID: 2114344943}
   - component: {fileID: 2114344942}
   - component: {fileID: 2114344940}
-  - component: {fileID: 2114344941}
   m_Layer: 0
   m_Name: Ball (14)
   m_TagString: Ball
@@ -3597,21 +3372,6 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isCueBall: 0
   startingPosition: {x: 0, y: 0, z: 0}
---- !u!114 &2114344941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114344939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!135 &2114344942
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3698,7 +3458,6 @@ GameObject:
   - component: {fileID: 2144343776}
   - component: {fileID: 2144343775}
   - component: {fileID: 2144343774}
-  - component: {fileID: 2144343773}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -3706,21 +3465,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2144343773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2144343772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92babb903e3c6be459e0bb17e037c61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cachedTransform: {fileID: 0}
-  radius: 0
-  ball: {fileID: 0}
 --- !u!114 &2144343774
 MonoBehaviour:
   m_ObjectHideFlags: 0
