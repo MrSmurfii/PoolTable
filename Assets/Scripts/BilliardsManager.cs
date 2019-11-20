@@ -1,38 +1,37 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BilliardsManager : MonoBehaviour {
-	[SerializeField] List<Ball> balls;
-	[SerializeField]private GameObject cue;
+	[SerializeField]private List<Ball> balls;
 	[SerializeField]private GameObject cueFocus;
 	[SerializeField]private float powerMultiplier = 10f;
+	private GameObject cue;
 	private const float SkinWidth = 0.015f;
 	private float radius;
 	private Ball cueBall;
-	private float maxPower = 40f;
-	private float forcePower;
+	private const float maxPower = 40f;
+	private float shotPower;
 	private Camera camera;
 	private Vector3 clickStart = Vector3.zero;
-	private float gravity = 9f;
 	
 	private void Start() {
 		radius = balls[0].transform.localScale.x * 0.5f;
 		camera = Camera.main;
+		cue = cueFocus.transform.GetChild(0).gameObject;
 		cue.SetActive(false);
-		foreach (Ball ball in balls) {
-			ball.startingPosition = transform.position;
-			if (ball.isCueBall)
-				cueBall = ball;
+		foreach (Ball ball in balls.Where(ball => ball.isCueBall)) {
+			cueBall = ball;
 		}
 	}
 
 	private void Update() {
 		float sumOfVelocity = 0f;
-		foreach (Ball ball in balls) {
-			if (!ball.gameObject.activeSelf) continue;
+		foreach (Ball ball in balls.Where(ball => ball.gameObject.activeSelf)) {
 			HandleCollision(ball);
-			HandleGravity(ball);
+			ball.velocity.y = 0f;
 			ball.Position += ball.velocity * Time.deltaTime;
 			ball.velocity *= 0.98f;
 			if (ball.velocity.magnitude < 0.1f)
@@ -64,8 +63,6 @@ public class BilliardsManager : MonoBehaviour {
 			clickStart = delta;
 		}
 
-	
-		
 		if (!Input.GetMouseButtonUp(0)) return;
 		Vector3 clickEnd = delta;
 		float power = (clickEnd - clickStart).magnitude;
@@ -120,21 +117,9 @@ public class BilliardsManager : MonoBehaviour {
 			}
 		}
 	}
-
 	private void Reset() {
-		SceneManager.LoadScene("SampleScene");
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
-
-	void HandleGravity(Ball ball) {
-		if (!Physics.SphereCast(ball.Position, radius, Vector3.down, out RaycastHit hit,
-			 Time.deltaTime + SkinWidth)) {
-			ball.velocity += Time.deltaTime * gravity * Vector3.down;
-		}
-		else {
-			ball.velocity.y = 0f;	
-		}
-	}
-	
 }
 
 	
