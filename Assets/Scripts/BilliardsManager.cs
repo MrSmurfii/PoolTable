@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,7 +11,7 @@ public class BilliardsManager : MonoBehaviour {
 	private const float SkinWidth = 0.015f;
 	private float radius;
 	private Ball cueBall;
-	private const float maxPower = 40f;
+	private const float maxPower = 80f;
 	private float shotPower;
 	private Camera camera;
 	private Vector3 clickStart = Vector3.zero;
@@ -87,7 +86,7 @@ public class BilliardsManager : MonoBehaviour {
 				Debug.DrawRay(ball.Position, ball.velocity * Time.deltaTime, Color.red, 10f);
 				Debug.DrawRay(hit.point, hit.normal, Color.blue, 10f);
 				ball.Position = hit.point + hit.normal * (radius + SkinWidth);
-				ball.velocity = Vector3.Reflect(ball.velocity, hit.normal);
+				ball.velocity = ReflectBall(ball.velocity, hit.normal);
 			}
 				
 			else if (Vector3.Dot(ball.velocity.normalized, hit.normal) < 0f) {
@@ -120,6 +119,13 @@ public class BilliardsManager : MonoBehaviour {
 	private void Reset() {
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
-}
 
-	
+	Vector3 ReflectBall(Vector3 inVelocity, Vector3 inNormal) {
+		float dot = Vector3.Dot(inVelocity, inNormal);
+		if (dot > 0f) {
+			return inVelocity;
+		}
+		Vector3 d = Mathf.Abs(dot) * 2f * inNormal;
+		return inVelocity + d;
+	}
+}

@@ -7,7 +7,6 @@ public class Ball : MonoBehaviour {
 		get => transform.position;
 		set => transform.position = value;
 	}
-
 }
 	
 	
